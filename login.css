@@ -34,7 +34,7 @@ body {
   border-radius: 15px;
   padding: 20px
     30px
-    160px;
+    140px;
   background: #abb0a080;
   box-shadow: 0 10px 20px rgba(146, 146, 146, 0.3);
   overflow: hidden;
@@ -51,7 +51,7 @@ body {
       220px
   );
   padding: 10px
-    140px;
+    150px;
   border-radius: 50%;
   height: 100%;
   background: #fff;
@@ -72,6 +72,7 @@ body {
   text-align: center;
   color: #fff;
   font-weight: 600;
+  font-size: 27px;
   cursor: pointer;
 }
 .form.signup
@@ -79,6 +80,7 @@ body {
   color: #5e5e5e;
   margin-top: 10px;
   opacity: 0.6;
+
 }
 .wrapper.active
   .form.signup
@@ -155,11 +157,21 @@ form
   padding: none;
   font-size: 18px;
   font-weight: 500;
+
   cursor: pointer;
 }
 .form.login
   input[type="submit"] {
-  background: #8dac5080;
+  background: #8ead4fbc;
   color: #fff;
   border: none;
 }
+
+.form.signup
+  input[type="submit"] {
+  background: black;
+  color: #fff;
+  border: none;
+}
+
+
