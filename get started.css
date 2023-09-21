@@ -80,7 +80,7 @@ header a, footer a {
 }
 
 header a:hover, footer a:hover {
-  color: rgb(97, 204, 97);
+  color:#8dac5080;
 }
 
 .homepage {
