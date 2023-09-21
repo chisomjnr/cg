@@ -324,12 +324,16 @@ footer {
     .navbar .all-links {
       position: fixed;
       left: -100%;
-      width: 300px;
+      width: 250px;
       display: block;
-      height: 100vh;
-      top: 75px;
-      background: #333;
+      height: 50vh;
+      top: 25px;
+      background: white;
+  
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
       transition: left 0.3s ease;
+      box-shadow: 0 10px 20px rgba(146, 146, 146, 0.3); 
     }
   
     .navbar #menu-toggler:checked~.all-links {
@@ -354,12 +358,14 @@ footer {
     }
   
     .homepage .content h1 {
-      font-size: 50px;
+      font-size: 30px;
       font-weight: 700;
       margin-bottom: 10px;
+      margin-top: 30px;
     }
   
-    .homepage .content .text {
+    .homepage .content .text 
+    {
       font-size: 17px;
       margin: 20px;
     }
@@ -370,7 +376,7 @@ footer {
   
     .content a {
       font-size: 17px;
-      padding: 20px 200px;
+      padding: 20px 150px;
       margin: 10px;
     }
   

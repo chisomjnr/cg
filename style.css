@@ -138,7 +138,7 @@ header a:hover, footer a:hover {
   border-radius: 15px;
 
   background: #8dac5080;
-  border: 2px solid #fff;
+
 
   transition: 0.4s ease;
   box-shadow: 0 10px 20px rgba(146, 146, 146, 0.3);
@@ -321,15 +321,19 @@ footer a {
 }
 
 @media screen and (max-width: 860px) {
-  .navbar .all-links {
-    position: fixed;
-    left: -100%;
-    width: 300px;
-    display: block;
-    height: 100vh;
-    top: 75px;
-    background: #333;
-    transition: left 0.3s ease;
+    .navbar .all-links {
+        position: fixed;
+        left: -100%;
+        width: 250px;
+        display: block;
+        height: 35vh;
+        top: 25px;
+        background: white;
+      
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        transition: left 0.3s ease;
+        box-shadow: 0 10px 20px rgba(146, 146, 146, 0.3); 
   }
 
   .navbar #menu-toggler:checked~.all-links {
@@ -354,11 +358,14 @@ footer a {
   }
 
   .homepage .content h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     margin-bottom: 10px;
   }
 
+  .homepage .ui{
+    display: none;
+  }
   .homepage .content .text {
     font-size: 17px;
     margin: 20px;
@@ -385,8 +392,8 @@ footer a {
     margin-top: 40px;
   }
 
-  footer a {
-    height: 0;
+  footer {
+display: none;
   }
 }
 
