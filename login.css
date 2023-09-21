@@ -28,14 +28,14 @@ body {
 }
 .wrapper {
   position: relative;
-  margin: 50px;
+  margin: 40px;
   max-width: 470px;
   width: 100%;
   border-radius: 15px;
   padding: 20px
     30px
     160px;
-  background: #8dac5080;
+  background: #abb0a080;
   box-shadow: 0 10px 20px rgba(146, 146, 146, 0.3);
   overflow: hidden;
 }
