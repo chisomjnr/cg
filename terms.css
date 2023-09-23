@@ -233,7 +233,25 @@ section {
   .portfolio .cards .card {
     padding: 0 0 20px;
   }
-  
+  .navbar .all-links a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    text-align: center; 
+   font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background-color: #9E74D0;
+    border-radius: 0;
+    border: 2px solid #9E74D0;
+    box-shadow: inset 0 0 0 0 #9E74D0;
+    transition: ease-out 0.3s;
+    border-radius: 10px;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+  }
+
+
   .services .card img {
     width: 120px;
     height: 120px;
