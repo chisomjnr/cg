@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background: #8dac5080;
+  background: #E5E1E2;
 }
 
 header {
@@ -23,8 +23,8 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  background:transparent;
-  /* box-shadow: 0 10px 20px rgba(146, 146, 146, 0.3); */
+  background:black;
+ box-shadow: 0 10px 20px rgba(146, 146, 146, 0.3); 
 }
 
 .navbar {
@@ -61,18 +61,47 @@ header {
   align-items: center;
   margin-left: 0;
   font-size: 30px;
-   border: 5px solid black; 
+ 
   padding: 15px 10px;
-  border-radius: 50%;
+
   margin: 20px;
   font-weight: bolder;
 
 }
 
+
+.navbar img{
+    width: 200px;
+}
+
+
+/* Style the anchor tag to look like a button */
+#closeTab {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #9E74D0;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: .2s;
+  font-weight: 600;
+}
+
+/*#closeTab Add hover effect */
+#closeTab:hover {
+  background-color: black;
+  
+}
+
+
+
 header a, footer a {
   margin-left: 40px;
   text-decoration: none;
-  color: black;
+  color: white;
   height: 100%;
   padding: 20px 0;
   display: inline-block;
@@ -80,7 +109,7 @@ header a, footer a {
 }
 
 header a:hover, footer a:hover {
-  color:#8dac5080;
+  color:#b8a4cf
 }
 
 .homepage {
@@ -104,7 +133,7 @@ header a:hover, footer a:hover {
 } */
 
 .homepage .content {
-    margin-top: 60px;
+    margin-top: 70px;
   display: flex;
   height: 85%;
   z-index: 3;
@@ -114,10 +143,17 @@ header a:hover, footer a:hover {
 }
 
 .homepage .content h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 10px;
+  color: black
 }
+
+span{
+ color: #9E74D0;
+}
+
+
 
 .homepage .content .text {
   margin-bottom: 50px;
@@ -322,32 +358,7 @@ footer {
   }
   
   @media screen and (max-width: 860px) {
-    .navbar .all-links {
-      position: fixed;
-      left: -100%;
-      width: 250px;
-      display: block;
-      height: 50vh;
-      top: 25px;
-      background: white;
-  
-      border-top-right-radius: 30px;
-      border-bottom-right-radius: 30px;
-      transition: left 0.3s ease;
-      box-shadow: 0 10px 20px rgba(146, 146, 146, 0.3); 
-    }
-  
-    .navbar #menu-toggler:checked~.all-links {
-      left: 0;
-    }
-  
-    .navbar .all-links li {
-      font-size: 18px;
-    }
-  
-    .navbar #hamburger-btn {
-      display: block;
-    }
+   
   
     section > p {
       text-align: center;

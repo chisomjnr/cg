@@ -24,21 +24,31 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f3fff0;
+  background: #E5E1E2;
 }
 .wrapper {
   position: relative;
-  margin: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
   max-width: 470px;
   width: 100%;
   border-radius: 15px;
   padding: 20px
     30px
     140px;
-  background: #abb0a080;
+  background:  #9E74D0;
   box-shadow: 0 10px 20px rgba(146, 146, 146, 0.3);
   overflow: hidden;
 }
+
+span{
+  color: black;
+  font-weight: bolder;
+}
+
+
 .form.signup {
   position: absolute;
   left: 50%;
@@ -134,7 +144,7 @@ form
   input[type="checkbox"] {
   height: 16px;
   width: 16px;
-  accent-color: #8dac5080;
+  accent-color:  #9E74D0;
   cursor: pointer;
 }
 form
@@ -143,8 +153,8 @@ form
   cursor: pointer;
   color: black;
 }
-form a {
-  color: #333;
+form a, p{
+  color: white;
   text-decoration: none;
 }
 form
@@ -162,7 +172,7 @@ form
 }
 .form.login
   input[type="submit"] {
-  background: #8ead4fbc;
+  background: black;
   color: #fff;
   border: none;
 }

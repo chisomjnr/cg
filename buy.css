@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins",
+    sans-serif;
+}
+
+
+
+
+
+.hero-section1 {
+    
+    width: 100%;
+    height: 400px;
+    /* background-image: url('images/biologist-woman-holding-test-tube-with-genetic-liquid-examining-green-dna-sample.jpg'); */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    margin-bottom: 100px;
+    
+  }
+
+
+.hero-section1 h2{
+  font-size: 45px;
+  color: rgb(58, 58, 58);
+
+}
+
+  .hero-section1 img{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    animation: floatAnimation 2s infinite alternate ease-in-out; /* Add animation properties */
+  }
+  
+  /* Keyframes for the floating animation */
+  @keyframes floatAnimation {
+      0% {
+          transform: translateY(0);
+      }
+      100% {
+          transform: translateY(-10px); /* Adjust the distance and direction of the float */
+      }
+  }
+
+  .hero-section1 p{
+    margin: 20px;
+    max-width: 800px;
+    margin-bottom: 30px;
+  }
+  .hero-title1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-buttons1 {
+    display: flex;
+    gap: 20px;
+  }
+
+
+  .btn1{
+    text-decoration: none;
+    padding: 19px 30px;
+    text-align: center; 
+   font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background-color: #9E74D0;
+    border-radius: 0;
+    border: 2px solid #9E74D0;
+    box-shadow: inset 0 0 0 0 #9E74D0;
+    transition: ease-out 0.3s;
+    border-radius: 10px;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+  }
+
+  .btn1:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+  }

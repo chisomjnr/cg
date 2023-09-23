@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Cryp2Shop - Admin Login & Signup Form</title>
+   <link rel="icon" type="image/x-icon" href="images/Logo (T).png">
+    <link rel="stylesheet" href="login.css" />
+    <meta name="Cryp2Shop" content="Shop the Modern Way.  ">
+    <meta name="description" content="Join our vast growing community today.">
+  </head>
+
+  <body>
+ 
+
+    <section class="wrapper">
+        <div class="form login">
+            <header>Login to <span>Cryp2shop </span><br>as an <span style="color: rgb(218, 218, 218);"> Admin.</span></header>
+            
+            <form action="#">
+              <input type="text" placeholder="Email address" required />
+              <input type="password" placeholder="Password" required />
+              <a href="#">Forgot password?</a>
+              <input type="submit" value="Login" />
+            </form>
+            <br>
+          <p>Don't have an <strong> account?</strong></p>  
+          </div>
+
+
+      <div class="form signup">
+        <header>Signup Instead</header>
+        <form action="#">
+          <input type="text" placeholder="Full name" required />
+          <input type="text" placeholder="Email address" required />
+          <input type="password" placeholder="Password" required />
+          <div class="checkbox">
+            <input type="checkbox" id="signupCheck" />
+            <label for="signupCheck">As an admin I accept all terms & conditions</label>
+          </div>
+          <input type="submit" value="Signup" />
+        </form>
+      </div>
+
+     
+
+      <script>
+        const wrapper = document.querySelector(".wrapper"),
+          signupHeader = document.querySelector(".login header"),
+          loginHeader = document.querySelector(".signup header");
+
+        loginHeader.addEventListener("click", () => {
+          wrapper.classList.add("active");
+        });
+        signupHeader.addEventListener("click", () => {
+          wrapper.classList.remove("active");
+        });
+      </script>
+    </section>
+  </body>
+</html>
