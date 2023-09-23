@@ -4,9 +4,21 @@
 body {
     color: #777777;
     font-weight: 500;
-    background: #E5E1E2;
+    background: url('images/BG.svg');
+    width: 100%;
     font-family: 'Quicksand', sans-serif;
 
+}
+
+body::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1;
 }
 
 html{
@@ -104,7 +116,7 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #4a4c70;
+    color: #ffffff;
 }
 
 a {
@@ -810,9 +822,12 @@ span{
     margin-top: 450px;
     position: relative;
     width: 100%;
+   
     padding: 45px 0;
 }
-
+.about p{
+    color: white;
+}
 .about .section-header {
     margin-bottom: 30px;
     margin-left: 0;
@@ -847,6 +862,7 @@ span{
 .about .about-tab .tab-content {
     padding: 15px 0 0 0;
     background: transparent;
+    color: white;
 }
 
 .about .about-tab .tab-content .container {
@@ -932,6 +948,7 @@ span{
     font-size: 22px;
     font-weight: 700;
     letter-spacing: 1px;
+    color: #000000;
 }
 
 .service .service-text p {
