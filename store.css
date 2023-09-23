@@ -10,7 +10,7 @@
          transform: translateY(0);
      }
      100% {
-         transform: translateY(-35px); /* Adjust the distance and direction of the float */
+         transform: translateX(-50px); /* Adjust the distance and direction of the float */
      }
  }
  
