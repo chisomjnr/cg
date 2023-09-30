@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>Cryp2Shop - Registration Form</title>
+       <link rel="icon" type="image/x-icon" href="images/Logo (T).png">
+      
+        <meta name="Cryp2Shop" content="Shop the Modern Way.  ">
+        <meta name="description" content="Join our vast growing community today.">
+      </head>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+
+  <script> import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";</script>
+  <script> import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";</script>
+  <script> import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";</script>
+
+<script src="register.js"></script>
+
+
+ 
+    <section class="container">
+        <img src="/images/Logo (T).png" alt="">
+      <header>Register on <span>Cryp2Shop</span></header>
+      <form action="#" class="form">
+        <label><Span>Personal Info</Span></label>
+        <div class="input-box">
+          
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="email" id="email" placeholder="Enter email address" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" id="number" placeholder placeholder="Enter phone number" required />
+          </div>
+          <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date"id="date_of_birth" placeholder  placeholder="Enter birth date" required />
+          </div>
+
+          
+        </div>
+
+
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">prefer not to say</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Address</label>
+          <input type="text" id="address" placeholder="Enter street address" required />
+          <input type="text" id="address_line2" placeholder="Enter street address line 2" required />
+          <div class="column">
+            <div id="country" class="select-box">
+              <select>
+                <option hidden>Country</option>
+                <option>America</option>
+                <option>Japan</option>
+                <option>India</option>
+                <option>Nepal</option>
+                <option>Nigeria</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <input type="text" id="city" placeholder="Enter your city" required />
+          </div>
+          <div class="column">
+            <input type="text" id="region" placeholder="Enter your region" required />
+            <input type="number" id="postal_code" placeholder="Enter postal code" required />
+
+  
+          </div>
+            <div>
+                <label>Profile Photo</label>
+                <input type="file" id="photo" placeholder="Profile Photo" required />
+            </div>
+<br>
+<br>
+          <div class="input-box">
+            <label><span>Affiliate Info</span></label>
+
+            <div>
+              <label>Validation form</label>
+            </div>
+   
+  
+            <input type="text" id="usdt" placeholder="USDT TRC-20 Address" required />
+            <input type="text" id="bank_name" placeholder="Bank Name" required />
+            <input type="text" id="account_number" placeholder="Bank Account Number" required />
+  
+  
+            <input type="text" id="id_type" placeholder="ID Type" required />
+            <input type="text" placeholder="ID Number" required />
+            <br>
+            <label>ID Photo</label>
+            <input type="file" id="id_photo" placeholder="ID Photo" required />
+  
+  
+          <input type="password" id="password" placeholder="Password" required />
+          <input type="password" id="confirm-password" placeholder="Re Type Password" required />
+          </div>
+  
+        </div>
+        <button onclick="register()">Register Now</button>
+      </form>
+    </section>
+
+   
+
+  </body>
+</html>

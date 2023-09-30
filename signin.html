@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Cryp2Shop - Login & Signup Form</title>
+   <link rel="icon" type="image/x-icon" href="images/Logo (T).png">
+    <link rel="stylesheet" href="signin.css" />
+    <meta name="Cryp2Shop" content="Shop the Modern Way.  ">
+    <meta name="description" content="Join our vast growing community today.">
+  </head>
+
+  <body>
+ 
+
+    <section class="wrapper">
+
+
+        <div class="form signup">
+            <header>Signup  to <span>Cryp2shop.</span></header>
+            <form action="#">
+              <input type="text" placeholder="Full name" required />
+              <input type="text" placeholder="Email address" required />
+              <input type="text" placeholder="Address" required />
+              <input type="text" placeholder="Phone Number" required />
+              <input type="text" placeholder="USDT TRC-20 Address" required />
+                <input type="text" placeholder="Bank Name" required />
+                <input type="text" placeholder="Bank Account Number" required />
+
+
+                <input type="text" placeholder="ID Type" required />
+                <input type="text" placeholder="ID Number" required />
+                <input type="file" placeholder="ID Photo" required />
+
+
+              <input type="password" placeholder="Password" required />
+              <input type="password" placeholder="Re Type Password" required />
+
+              <input type="date" placeholder="Date of Birth" required />
+              <input type="file"  placeholder="Profile Photo" required />
+
+
+              <div class="checkbox">
+                <input type="checkbox" id="signupCheck" />
+                <label for="signupCheck">I accept all terms & conditions</label>
+              </div>
+              <input type="submit" value="Signup" />
+            </form>
+          </div>
+
+
+        <div class="form login">
+     
+          </div>
+
+
+
+     
+
+      <script>
+        const wrapper = document.querySelector(".wrapper"),
+          signupHeader = document.querySelector(".login header"),
+          loginHeader = document.querySelector(".signup header");
+
+        loginHeader.addEventListener("click", () => {
+          wrapper.classList.add("active");
+        });
+        signupHeader.addEventListener("click", () => {
+          wrapper.classList.remove("active");
+        });
+      </script>
+    </section>
+  </body>
+</html>
