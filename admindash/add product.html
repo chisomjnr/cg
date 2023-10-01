@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,105 +13,69 @@
 
 	<title>Cryp2shop Admin Panel</title>
 </head>
+
 <body>
 
 
 
 	<section class="container">
 		<a class="navi" href="admin dash.html">Back to DashBoard</a>
-      <header>Add <span>Product</span></header>
-      <form action="#" class="form">
-       
-        <div class="input-box">
-			<div>
-				<label style="color: transparent;">Validation form</label>
-			  </div>
-	
+		<header>Add <span>Product</span></header>
+		<form action="http://localhost:3000/add" method="post" class="form" enctype="multipart/form-data">
+
+			<div class="input-box">
+				<div>
+					<label style="color: transparent;">Validation form</label>
+				</div>
+
 				<div>
 					<label>Product Photo 1</label>
-					<input type="file" id="photo" placeholder="Product Photo 1" required />
-				</div>	
-		
-				<div>
-					<label>Product Photo 2</label>
-					<input type="file" id="photo" placeholder="Product Photo 2" />
-				</div>	
-
-				<div>
-					<label>Product Photo 3</label>
-					<input type="file" id="photo" placeholder="Product Photo 3"  />
-				</div>	
-
-				<div>
-					<label>Product Photo 4</label>
-					<input type="file" id="photo" placeholder="Product Photo 4"/>
-				</div>	
-
-				<div>
-					<label>Product Photo 5</label>
-					<input type="file" id="photo" placeholder="Product Photo 5"  />
-				</div>	
-
-				<div>
-					<label>Product Video</label>
-					<input type="file" id="Video" placeholder="Product Video "  />
-				</div>	
-
+					<input type="file" id="photo" placeholder="Product Photo 1" required name="picture" />
+				</div>
 
 				<div>
 					<label style="color: transparent;">Validation form</label>
-				  </div>
-          <label>Product Name</label>
-          <input type="text" placeholder="Input Product Name" required />
-        </div>
-
-
-		
-
-        <div class="column">
-          <div class="input-box">
-			<label>Product Price</label>
-			<input type="text" placeholder="Input Product Price" required />
-		  </div>
-          </div>
-          <div class="input-box">
-			<label>Product commission</label>
-			<input type="text" placeholder="Input Product commission" required />
-          </div>
-
-		  <div class="input-box">
-          <label>Product Description</label>
-			<input type="text" placeholder="Input Product Description" required />
-		</div>
-
-		
-		<div class="input-box">
-			<label>Product Code</label>
-<input type="text" placeholder="Input Product Code" required />
-		  </div>
-
-		  
-		  <div class="input-box">
-			<label>Quantity Availavble</label>
-<input type="text" placeholder="Input Quantity" required />
-		  </div>
-
-		  
-		 
-        </div>
+				</div>
+				<label>Product Name</label>
+				<input type="text" placeholder="Input Product Name" required name="name" />
+			</div>
 
 
 
-        
-<br>
-<br>
-<button>Upload Product</button>
-      </form>
-    </section>
-	
+
+			<div class="column">
+				<div class="input-box">
+					<label>Product Price</label>
+					<input type="text" placeholder="Input Product Price" required name="price" />
+				</div>
+			</div>
+			<div class="input-box">
+				<label>Product commission</label>
+				<input type="text" placeholder="Input Product commission" required name="commission"/>
+			</div>
+
+			<div class="input-box">
+				<label>Product Description</label>
+				<input type="text" placeholder="Input Product Description" required name="description"/>
+			</div>
+
+
+			<div class="input-box">
+				<label>Quantity Availavble</label>
+				<input type="text" placeholder="Input Quantity" required name="quantity"/>
+			</div>
+
+			</div>
+			<br>
+			<br>
+			<button>Upload Product</button>
+		</form>
+	</section>
+
 	<!-- CONTENT -->
-	
+
 	<script src="upload.js"></script>
 	<script src="add.js"></script>
 </body>
+
 </html>
