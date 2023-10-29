@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Laosom - Building Digital Product</title>
+  
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+        rel="stylesheet"
+      />
+      <meta name="Laosom" content="Laosom - A Digital Service Company ">
+      <meta name="description" content="Feel free to connect with us.">
+  
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- 
+      - favicon
+    -->
+    <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+    <link rel="icon" type="image/x-icon" href="assets/images/newsletter-banner.png">
+  
+  
+
+ <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  </head>
+
+
+  <body>
+    <div class="wrapper">
+   
+      <header >   <img src="assets/images/newsletter-banner.png" width="60" alt=""> <br> Send Us A Message</header>
+   
+      <form 
+      action="https://formspree.io/f/mleyzwkq"
+      method="POST"
+      
+      action="#">
+      <p style="color: rgb(139, 139, 139); font-size: 14px; text-align: center;">You'll recieve a mail  from us shortly in response to your message</p>
+      <br>
+        <div class="dbl-field">
+          <div class="field">
+            <input type="text" name="name" placeholder="Enter your name or company">
+            <i class='fas fa-user'></i>
+          </div>
+          <div class="field">
+            <input type="text" name="email" placeholder="Enter your email or company's">
+            <i class='fas fa-envelope'></i>
+          </div>
+        </div>
+        <div class="dbl-field">
+          <div class="field">
+            <input type="text" name="phone" placeholder="Enter your phone or company's">
+            <i class='fas fa-phone-alt'></i>
+          </div>
+
+          
+
+          <div class="field">
+            <input type="text" name="subject" placeholder="Reason for message (Subject)">
+            <i class='fas fa-globe'></i>
+          </div>
+        </div>
+
+
+
+
+        <div class="message">
+          <textarea placeholder="Write your message" name="message"></textarea>
+          <i class="material-icons">message</i>
+        </div>
+        <div class="button-area">
+          <button class="btn" type="submit">Send Message</button>
+          <span></span>
+       
+       
+          <button id="goBackLink" class="btnn" type="submit"><< Back to Previous Page</button>
+       
+          <span></span>
+        </div>
+
+        <div class="button-area">
+         
+        </div>
+        <p style="font-size: 13px; text-align: center;">  Designed & Developed by <strong>Laosom.</strong>
+      </p>
+      </form>
+
+      
+    </div>
+  
+  
+  </body>
+  <script>
+    document.getElementById("goBackLink").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default behavior of the link
+    
+        history.back(); // Go back to the previous page
+    });
+    </script>
+  
+</html>
